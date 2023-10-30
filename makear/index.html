@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  </head>
+
+<!-- <video id="player" controls autoplay></video>
+<button id="capture">Capture</button>
+<div width="520" height="640" color="yellow"></div>
+<canvas id="canvas" width="320" height="240"></canvas> -->
+
+<body>
+    <div id="container">
+    <div class="mainDiv">
+        <img  class="imagehome"src="home.jpg" alt="buttonpng" border="0" />
+        <div class="secondDiv">
+         <video  class="vedio"id="player"  controls autoplay></video> 
+         <button  class ="buttonclass"id="capture"><img  class="imageclass"src="camera.png" alt="buttonpng" border="0" /></button>
+          <input class="inputText" type="text" placeholder="Enter your Name" id="firstname"  keyup="onlyalphaKey($event)" maxlength="10"/>
+         <button  class="saveClass"id="save"  >Save</button>
+         <button  class="secondBtn"id="secondbtn" >Download</button>
+</div>
+</div>
+
+<div class="secondmaingrid">
+    <div class="box1">
+    <canvas id="canvas" width="180"height=200></canvas>
+    <h3 class="name">Name <div id="firstname2"></div></h3>
+    
+        <div class="box2">
+            <h2 class="explore">Continents Explored</h2>
+            <img  class="imagemap"src="continent.jpg" alt="buttonpng" border="0" />
+        </div>
+        
+    </div>
+    <button  class="secondBtn2"id="secondbtn2" >Download</button>
+</div>
+<!-- <canvas id="canvas" hidden></canvas> -->
+
+</div>
+    <script src="scripting.js"></script>
+</body>
+<!-- <script>
+  const player = document.getElementById('player');
+  const canvas = document.getElementById('canvas');
+  const context = canvas.getContext('2d');
+  const captureButton = document.getElementById('capture');
+
+  const constraints = {
+    video: true,
+  };
+
+  captureButton.addEventListener('click', () => {
+    context.drawImage(player, 0, 0, canvas.width, canvas.height);
+
+    // Stop all video streams.
+    player.srcObject.getVideoTracks().forEach(track => track.stop());
+  });
+
+  navigator.mediaDevices.getUserMedia(constraints).then((stream) => {
+    // Attach the video stream to the video element and autoplay.
+    player.srcObject = stream;
+  });
+</script> -->
+</html>
